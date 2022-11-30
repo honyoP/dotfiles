@@ -25,7 +25,6 @@
 (set-fringe-mode 10)
 (global-visual-line-mode 1)
 
-
 (use-package dashboard
   :ensure t
   :config
@@ -42,7 +41,6 @@
   (setq doom-themes-enable-bold t    ; if nil, bold is universally disabled
         doom-themes-enable-italic t) ; if nil, italics is universally disabled
   (load-theme 'doom-solarized-light t)
-  ;; Enable flashing mode-line on errors
   (doom-themes-visual-bell-config)
   ;; Enable custom neotree theme (all-the-icons must be installed!)
   ;;(doom-themes-neotree-config)
@@ -52,18 +50,9 @@
   ;; Corrects (and improves) org-mode's native fontification.
   (doom-themes-org-config))
 (custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
  '(package-selected-packages
    '(magit company-box python-mode gnu-elpa-keyring-update which-key dap-python dap-mode lsp-ui lsp-mode dashboard doom-themes use-package)))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
+(custom-set-faces)
 
 ;;--------------------[Dev Tools ]-----------------
 
@@ -109,7 +98,6 @@
 ;; optionally if you want to use debugger
 (use-package dap-mode)
 ;; (use-package dap-LANGUAGE) to load the dap adapter for your language
-;;(use-package dap-python)
 ;; optional if you want which-key integration
 (use-package which-key
     :config
